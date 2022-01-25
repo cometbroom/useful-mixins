@@ -8,5 +8,5 @@
     - "bottom"
     - "center-right"
   
-  `@include place-element("center")`
-    ![Image of element being centered](./images/place-elements.PNG)
+    `@include place-element("center")`
+        ![Image of element being centered](./images/place-elements.PNG)
