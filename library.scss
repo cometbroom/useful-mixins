@@ -1,0 +1,61 @@
+///Places an element using position:absolute by default
+///
+///@param {string} $position
+///The position of the element according to browser dimensions. User "left" or "right" to start from parent's starting positon
+///@param {string} $positioning
+///The position attribute of the element. It is absolute by default.
+@mixin place-element($position, $positioning: absolute) {
+    position: $positioning;
+
+    @if $position == "top" {
+        left: 50%;
+        top: 0%;
+        transform: translateX(-50%);
+    }
+    @if $position == "top-left" {
+        top: 0%;
+        left: 0%;
+    }
+    @if $position == "left" {
+        left: 0%;
+    }
+    @if $position == "top-right" {
+        left: 100%;
+        top: 0%;
+        transform: translateX(-100%);
+    }
+    @if $position == "right" {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    @if $position == "bottom" {
+        left: 50vw;
+        top: 100%;
+        transform: translate(-50%, -100%);
+    }
+    @if $position == "bottom-left" {
+        left: 0;
+        top: 100%;
+        transform: translateY(-100%);
+    }
+    @if $position == "bottom-right" {
+        left: 100%;
+        top: 100%;
+        transform: translate(-100%, -100%);
+    }
+    @if $position == "center" {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @if $position == "center-left" {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @if $position == "center-right" {
+        left: 100%;
+        top: 50%;
+        transform: translate(-100%, -50%);
+    }
+}
