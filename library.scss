@@ -1,7 +1,7 @@
 ///Places an element using position:absolute by default
 ///
 ///@param {string} $position
-///The position of the element according to browser dimensions. User "left" or "right" to start from parent's starting positon
+///The position of the element according to browser dimensions. Use "left" or "right" to start from parent's starting positon
 ///@param {string} $positioning
 ///The position attribute of the element. It is absolute by default.
 @mixin place-element($position, $positioning: absolute) {
@@ -29,7 +29,7 @@
         transform: translateX(-100%);
     }
     @if $position == "bottom" {
-        left: 50vw;
+        left: 50%;
         top: 100%;
         transform: translate(-50%, -100%);
     }
