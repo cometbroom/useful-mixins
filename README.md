@@ -3,5 +3,6 @@
 ## List of Mixins:
 
 -   ## Place elements:
-    ```@include place-element("center")```
+    `@include place-element("center")`
+    
     ![Image of element being centered](./images/place-elements.PNG)
